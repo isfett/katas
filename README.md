@@ -1,1 +1,3 @@
 # katas
+
+Personal Kata Repository
