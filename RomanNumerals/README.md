@@ -37,3 +37,8 @@ C	C stands for centum, the Latin word for 100. A centurion led 100 men. We still
 D	D stands for 500. As you can probably guess by this time, CD means 400. So CDXLVIII is 448. (See why we switched systems?)
 M	M is 1,000. You see a lot of Ms because Roman numerals are used a lot to indicate dates. For instance, this page was written in the year of Nova Roma's founding, 1998 CE (Common Era; Christians use AD for Anno Domini, "year of our Lord"). That year is written as MCMXCVIII. But wait! Nova Roma counts years from the founding of Rome, ab urbe condita. By that reckoning Nova Roma was founded in 2751 a.u.c. or MMDCCLI.
 ```
+
+## RomanCalculator
+
+Also solved this for addition and subtraction 
+From http://codingdojo.org/kata/RomanCalculator/

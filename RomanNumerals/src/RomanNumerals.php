@@ -62,4 +62,42 @@ class RomanNumerals implements RomanNumeralsInterface
 
         return $result;
     }
+
+    /**
+     * @param string $roman1
+     * @param string $roman2
+     * @return string
+     */
+    public static function additionRomanToRoman(string $roman1, string $roman2): string
+    {
+        $number1 = self::romanToNumber($roman1);
+        $number2 = self::romanToNumber($roman2);
+
+        $addition = $number1 + $number2;
+
+        if ($addition > 3000) {
+            throw new \OutOfRangeException('Over 3000');
+        }
+
+        return self::numberToRoman($addition);
+    }
+
+    /**
+     * @param string $roman1
+     * @param string $roman2
+     * @return string
+     */
+    public static function subtractionRomanToRoman(string $roman1, string $roman2): string
+    {
+        $number1 = self::romanToNumber($roman1);
+        $number2 = self::romanToNumber($roman2);
+
+        $substration = $number1 - $number2;
+
+        if ($substration < 0) {
+            throw new \OutOfRangeException('Lower Zero');
+        }
+
+        return self::numberToRoman($substration);
+    }
 }
