@@ -92,12 +92,12 @@ class RomanNumerals implements RomanNumeralsInterface
         $number1 = self::romanToNumber($roman1);
         $number2 = self::romanToNumber($roman2);
 
-        $substration = $number1 - $number2;
+        $substraction = $number1 - $number2;
 
-        if ($substration < 0) {
+        if ($substraction < 0) {
             throw new \OutOfRangeException('Lower Zero');
         }
 
-        return self::numberToRoman($substration);
+        return self::numberToRoman($substraction);
     }
 }
