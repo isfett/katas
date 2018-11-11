@@ -85,6 +85,12 @@ class CsvFileIterator implements \Iterator
                 if ($value === 'null') {
                     $this->current[$key] = null;
                 }
+                if ($value === 'false') {
+                    $this->current[$key] = false;
+                }
+                if ($value === 'true') {
+                    $this->current[$key] = true;
+                }
             }
         }
     }
